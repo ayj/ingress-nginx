@@ -419,7 +419,7 @@
   branch = "release-1.8"
   name = "k8s.io/api"
   packages = ["admissionregistration/v1alpha1","apps/v1beta1","apps/v1beta2","authentication/v1","authentication/v1beta1","authorization/v1","authorization/v1beta1","autoscaling/v1","autoscaling/v2beta1","batch/v1","batch/v1beta1","batch/v2alpha1","certificates/v1beta1","core/v1","extensions/v1beta1","networking/v1","policy/v1beta1","rbac/v1","rbac/v1alpha1","rbac/v1beta1","scheduling/v1alpha1","settings/v1alpha1","storage/v1","storage/v1beta1"]
-  revision = "4df58c811fe2e65feb879227b2b245e4dc26e7ad"
+  revision = "9b9dca205a15b6ce9ef10091f05d60a13fdcf418"
 
 [[projects]]
   branch = "master"
@@ -447,6 +447,12 @@
 
 [[projects]]
   branch = "master"
+  name = "k8s.io/ingress-nginx"
+  packages = ["internal/file","internal/ingress","internal/ingress/annotations","internal/ingress/annotations/alias","internal/ingress/annotations/auth","internal/ingress/annotations/authreq","internal/ingress/annotations/authtls","internal/ingress/annotations/class","internal/ingress/annotations/clientbodybuffersize","internal/ingress/annotations/cors","internal/ingress/annotations/defaultbackend","internal/ingress/annotations/healthcheck","internal/ingress/annotations/ipwhitelist","internal/ingress/annotations/parser","internal/ingress/annotations/portinredirect","internal/ingress/annotations/proxy","internal/ingress/annotations/ratelimit","internal/ingress/annotations/redirect","internal/ingress/annotations/rewrite","internal/ingress/annotations/secureupstream","internal/ingress/annotations/serversnippet","internal/ingress/annotations/serviceupstream","internal/ingress/annotations/sessionaffinity","internal/ingress/annotations/snippet","internal/ingress/annotations/sslpassthrough","internal/ingress/annotations/upstreamhashby","internal/ingress/annotations/upstreamvhost","internal/ingress/annotations/vtsfilterkey","internal/ingress/annotations/xforwardedprefix","internal/ingress/controller","internal/ingress/controller/config","internal/ingress/controller/metric/collector","internal/ingress/controller/process","internal/ingress/controller/template","internal/ingress/defaults","internal/ingress/errors","internal/ingress/resolver","internal/ingress/status","internal/ingress/store","internal/k8s","internal/net","internal/net/dns","internal/net/ssl","internal/task","internal/watch","test/e2e/annotations","test/e2e/defaultbackend","test/e2e/framework","test/e2e/settings","test/e2e/ssl","version"]
+  revision = "a09527cf6d7d3cae180b0ae1a5b28c4dc1b29a27"
+
+[[projects]]
+  branch = "master"
   name = "k8s.io/kube-openapi"
   packages = ["pkg/common"]
   revision = "39a7bf85c140f972372c2a0d1ee40adbf0c8bfe1"
@@ -466,6 +472,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "cb7f34d9108be87b2601c0d4acbd6faa41bdf211a082760fa1b4d4300bf3e959"
+  inputs-digest = "1c01f758a79b64f7d78835e765503ec8593ad0033a80e6813d7ffc756ed14742"
   solver-name = "gps-cdcl"
   solver-version = 1
